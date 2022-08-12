@@ -61,10 +61,10 @@ const commonOpts = {
   host: "api.github.com",
   port: 443,
   protocol: "https:",
-  auth: `user:${GITHUB_TOKEN}`,
   headers: {
     "Content-Type": "application/json",
     "User-Agent": "node.js",
+    "Authorization": `token ${GITHUB_TOKEN}`
   },
 };
 
